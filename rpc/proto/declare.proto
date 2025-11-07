@@ -1,0 +1,47 @@
+syntax = "proto3";
+package asset;
+option go_package = "./pb";
+
+message Tx {
+  string hash = 1;
+  string from = 2;
+  string to = 3;
+  string value = 4;
+  string data = 5;
+  uint64  timestamp = 6;
+}
+
+message Token {
+  string name = 1;
+  string description = 2;
+  string address = 3;
+  string symbol = 4;
+  string link = 5;
+  uint32 decimals = 6;
+  string type = 7;
+}
+
+message TokenAsset {
+  Token token = 1;
+  string value = 2;
+  string type = 3;
+}
+
+message NFTAsset {
+  Token token = 1;
+  string token_id = 2;
+  string metadata_url = 3;
+  bool special_url = 4;
+  string token_type = 5;
+}
+
+message SyncInfo {
+  uint64 current_block_number = 1;
+  uint64 last_block_number = 2;
+}
+
+message BlockchainInfo {
+  uint64 block_count = 1;
+  SyncInfo sync_info = 2;
+  double percent = 3;
+}

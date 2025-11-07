@@ -1,0 +1,13 @@
+syntax = "proto3";
+package asset;
+option go_package = "./pb";
+import "google/protobuf/empty.proto";
+import "declare.proto";
+
+message GetBlockchainInfoResponse {
+  BlockchainInfo blockchain_info = 1;
+}
+
+service BlockchainService {
+  rpc GetBlockchainInfo(google.protobuf.Empty) returns (GetBlockchainInfoResponse);
+}

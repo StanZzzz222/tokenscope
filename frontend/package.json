@@ -1,0 +1,34 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroui/react": "^2.8.1",
+    "@heroui/theme": "^2.4.19",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/vite": "^4.1.11",
+    "@vitejs/plugin-legacy": "^7.0.1",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.12.2",
+    "blockies-react-svg": "^0.0.13",
+    "ethers": "^6.15.0",
+    "framer-motion": "^12.23.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "vite": "^7.0.5"
+  }
+}

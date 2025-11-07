@@ -1,0 +1,41 @@
+[server]
+# API Port
+port=9000
+# Is it debug mode?
+debug=false
+
+[grpc]
+# gRPC Host
+host="127.0.0.1"
+# gRPC port
+port=9001
+# Is it enabled?
+enabled=true
+# Is enabled log?
+log-enabled=true
+# Auth token
+token="dG9rZW5zY29wZQ=="
+
+[rpc]
+# ChainID
+chain-id=1
+# RPC endpoint for Web3 client
+url="https://ethereum-rpc.publicnode.com"
+# The block height at which block synchronization starts
+start=23460530
+# This parameter is used to limit the number of concurrent synchronizations of old blocks
+sync-sem=2
+# Is enabled blockchain sync?
+sync=true
+
+[image]
+# ERC20 Token icon url
+erc20-url="https://static.oklink.com/cdn/web3/currency/token/large/#{chainId}-#{tokenAddress}-106/type=default_90_0?v=1758556935970&x-oss-process=image/resize,w_64,h_64,type_6/ignore-error,1"
+# ERC721 is on IPFS, so it is the address of the IPFS gateway. Pinata is used by default.
+erc721-url="https://gateway.pinata.cloud/ipfs/#{cid}/"
+
+[logger]
+# Log file name
+name = "./app.log"
+# Is it  write to file?
+file-enabled = false

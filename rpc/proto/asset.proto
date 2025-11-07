@@ -1,0 +1,43 @@
+syntax = "proto3";
+package asset;
+option go_package = "./pb";
+import "declare.proto";
+import "google/protobuf/any.proto";
+
+message GetAssetRequest {
+  string address = 1;
+}
+
+message GetAssetResponse {
+  string address = 1;
+  string balance = 2;
+  repeated Token erc20_tokens = 3;
+  repeated Token erc721_tokens = 4;
+  repeated Tx txs = 5;
+}
+
+message GetMetadataRequest {
+  string token_address = 1;
+  string token_id = 2;
+}
+
+message GetERC20TokenAssetsRequest {
+  string address = 1;
+  string token_address = 2;
+}
+
+message GetERC721TokenAssetsRequest {
+  string address = 1;
+  string token_address = 2;
+}
+
+message GetERC721TokenAssetsResponse {
+  repeated NFTAsset erc721_tokens = 1;
+}
+
+service AssetService {
+  rpc GetAsset(GetAssetRequest) returns (GetAssetResponse);
+  rpc GetMetadata(GetMetadataRequest) returns (google.protobuf.Any);
+  rpc GetERC20TokenAssets(GetERC20TokenAssetsRequest) returns (TokenAsset);
+  rpc GetERC721TokenAssets(GetERC721TokenAssetsRequest) returns (GetERC721TokenAssetsResponse);
+}
