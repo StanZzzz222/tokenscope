@@ -48,4 +48,4 @@ go build -o tokenscope ./cmd
 - TokenScope仅从公共数据中拉取了2316个ERC20与2934个ERC721数据，目前仅能对这部分ERC20与ERC721进行嗅探，如有需要可自行增加数据。
 
 ## 许可证
-遵循 [LGPL-3.0](LICENSE(https://github.com/StanZzzz222/tokenscope/blob/master/LICENCE)) 许可证。
+遵循 [LGPL-3.0](https://github.com/StanZzzz222/tokenscope/blob/master/LICENCE) 许可证。

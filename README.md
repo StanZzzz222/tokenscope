@@ -49,4 +49,4 @@ go build -o tokenscope ./cmd
 - TokenScope only pulls data for 2,316 ERC20 and 2,934 ERC721 from the public database. Only this portion of ERC20 and ERC721 data is being sniffed. You can add more data as needed.
 
 ## License
-Licensed under [LGPL-3.0](LICENSE(https://github.com/StanZzzz222/tokenscope/blob/master/LICENCE)).
+Licensed under [LGPL-3.0](https://github.com/StanZzzz222/tokenscope/blob/master/LICENCE).
