@@ -1,0 +1,11 @@
+*.exe
+*.log
+*.tmp
+*.bak
+/bin/
+/build/
+/dist/
+.vscode/
+.idea/
+.DS_Store
+.env
