@@ -1,6 +1,7 @@
 # TokenScope
 
-- [English](https://github.com/StanZzz11/tokenscope/blob/master/README.md)
+- [English](https://github.com/StanZzzz222/tokenscope/blob/master/README.md)
+
 **TokenScope** 是一个适用于兼容 EVM 区块链的简易资产查看工具，专注于获取指定地址的链上资产，包括 ERC-20 代币、NFT，并提供区块同步模块，通过 RPC 逐块拉取区块并同步交易数据。
 
 ---
@@ -17,7 +18,7 @@
 
 ### 前端
 ```bash
-git clone https://github.com/StanZzz11/tokenscope.git
+git clone https://github.com/StanZzzz222/tokenscope.git
 cd tokenscope/frontend
 pnpm install autoprefixer
 pnpm i
@@ -26,7 +27,7 @@ pnpm run build
 ```
 ### 后端
 ```bash
-git clone https://github.com/StanZzz11/tokenscope.git
+git clone https://github.com/StanZzzz222/tokenscope.git
 cd tokenscope
 go mod tidy
 go build -o tokenscope ./cmd
@@ -47,4 +48,4 @@ go build -o tokenscope ./cmd
 - TokenScope仅从公共数据中拉取了2316个ERC20与2934个ERC721数据，目前仅能对这部分ERC20与ERC721进行嗅探，如有需要可自行增加数据。
 
 ## 许可证
-遵循 [LGPL-3.0](LICENSE(https://github.com/StanZzz11/tokenscope/blob/master/LICENCE)) 许可证。
+遵循 [LGPL-3.0](LICENSE(https://github.com/StanZzzz222/tokenscope/blob/master/LICENCE)) 许可证。

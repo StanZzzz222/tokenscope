@@ -1,6 +1,7 @@
 # TokenScope
 
-- [中文文档](https://github.com/StanZzz11/tokenscope/blob/master/README_zh.md)
+- [中文文档](https://github.com/StanZzzz222/tokenscope/blob/master/README_zh.md)
+
   **TokenScope** is a lightweight asset viewer tool for EVM-compatible chains, designed to retrieve on-chain assets for a specified address, including ERC-20 tokens and NFTs. It also provides a block synchronization module that pulls blocks via RPC and synchronizes transaction data incrementally.
 
 ---
@@ -17,7 +18,7 @@
 
 ### Frontend
 ```bash
-git clone https://github.com/StanZzz11/tokenscope.git
+git clone https://github.com/StanZzzz222/tokenscope.git
 cd tokenscope/frontend
 pnpm install autoprefixer
 pnpm i
@@ -27,7 +28,7 @@ pnpm run build
 
 ### Backend
 ```bash
-git clone https://github.com/StanZzz11/tokenscope.git
+git clone https://github.com/StanZzzz222/tokenscope.git
 cd tokenscope
 go mod tidy
 go build -o tokenscope ./cmd
@@ -48,4 +49,4 @@ go build -o tokenscope ./cmd
 - TokenScope only pulls data for 2,316 ERC20 and 2,934 ERC721 from the public database. Only this portion of ERC20 and ERC721 data is being sniffed. You can add more data as needed.
 
 ## License
-Licensed under [LGPL-3.0](LICENSE(https://github.com/StanZzz11/tokenscope/blob/master/LICENCE)).
+Licensed under [LGPL-3.0](LICENSE(https://github.com/StanZzzz222/tokenscope/blob/master/LICENCE)).
